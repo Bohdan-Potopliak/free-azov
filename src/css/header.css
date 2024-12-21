@@ -1,3 +1,51 @@
-.header {
-    position: relative;
+.header-section {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+
+.header-top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.header-logo-image {
+  background-color: transparent;
+}
+
+.header-logo-link {
+  display: flex;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+}
+
+.menu-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--main-text);
+}
+
+.order-button {
+  background: var(--button-text);
+
+  border-radius: 60px;
+  padding: 18px 24px;
+  width: 163px;
+  height: 55px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
 }
