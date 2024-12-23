@@ -7,7 +7,9 @@
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/free-azov/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/free-azov/assets/index-Caa4i1wv.css">
+    <link rel="modulepreload" crossorigin href="/free-azov/assets/vendor-B9-djN47.js">
+    <link rel="stylesheet" crossorigin href="/free-azov/assets/vendor-D_nxXpU-.css">
+    <link rel="stylesheet" crossorigin href="/free-azov/assets/index-BktYGQ2Q.css">
   </head>
   <body>
     <header class="header-section">
@@ -212,8 +214,129 @@
 
 </section>
       </main>
-    <footer class="">
+    <footer class="work_together">
+  <div class="container work_together_container">
+    <div class="work_together_wrap">
+      <div class="work_together_wrap_picture">
+        <picture>
+          <source
+            srcset="/free-azov/img/work-together-img/foto-70x70px-1x.jpg 1x, /free-azov/img/work-together-img/foto-70x70px-2x.jpg 2x"
+            type="image/jpeg"
+            media="(min-width: 768px)"
+          />
 
+          <source
+            srcset="/free-azov/img/work-together-img/foto-44x44px-1x.jpg 1x, /free-azov/img/work-together-img/foto-44x44px-2x.jpg 2x"
+            type="image/jpeg"
+            media="(min-width: 320px)"
+          />
+          <img
+            src="/free-azov/img/work-together-img/foto-44x44px-1x.jpg"
+            class="work_together_logo"
+            alt="foto"
+            width="44"
+            height="44"
+            loading="lazy"
+          />
+        </picture>
+        <h2 class="work_together_wrap_logo_text">
+          Let&#8217;s&#32;<span>&#119;&#111;&#114;&#107;</span>
+        </h2>
+      </div>
+      <div>
+        <h2 class="work_together_wrap_logo_text">together</h2>
+      </div>
+    </div>
+    <form class="work_together_form" id="work_together_form">
+      <div class="work_together_wrap_form">
+        <div class="work_together_wrap_email">
+          <label class="work_together_label_email visually-hidden" for="email">
+            email</label
+          >
+          <input
+            class="work_together_input_email"
+            name="email"
+            id="user_email"
+            type="email"
+            placeholder="clients@gmail.com"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            required
+          />
+        </div>
+
+        <div class="work_together_wrap_textarea">
+          <label
+            class="work_together_label_textarea visually-hidden"
+            for="comment"
+            >comments</label
+          >
+          <textarea
+            class="work_together_input_text"
+            name="comment"
+            id="user_comment"
+            placeholder="comments"
+            required
+          ></textarea>
+        </div>
+      </div>
+      <button
+        class="work_together_button"
+        id="work_together_buttonSend"
+        type="submit"
+        aria-label="Send"
+      >
+        Send
+      </button>
+    </form>
+    <address class="work_together_address">
+      <ul class="work_together_address_list">
+        <li class="work_together_address_item">
+          <a
+            class="work_together_address_link"
+            href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson&#64;gmail&#46;com</a
+          >
+        </li>
+        <li class="work_together_address_item">
+          <a class="work_together_address_link" href="tel:+3801111111111"
+            >&#43;380&#32;11&#32;1111&#32;11&#32;11</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+
+  <div
+    class="work_together_backdrop"
+    id="together_backdrop_modal_backdrop"
+    data-modal-messages
+  >
+    <div class="work_together_modal">
+      <button
+        class="work_together_modal_close_btn"
+        data-modal-close
+        type="button"
+      >
+        X
+        <!-- <svg class="work_together_modal_close_icon" width="22" height="22">
+              <use href=""></use>
+            </svg> -->
+      </button>
+      <div class="work_together_modal_wrap_messages">
+        <h5
+          data-modal-title
+          class="work_together_modal_title"
+          id="work_together_title"
+        ></h5>
+        <p
+          data-modal-message
+          class="work_together_modal_text"
+          id="work_together_text"
+        ></p>
+      </div>
+    </div>
+  </div>
 </footer>
+
   </body>
 </html>
