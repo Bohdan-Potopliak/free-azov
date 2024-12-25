@@ -70,7 +70,7 @@
 .work_together_wrap_logo_text span {
   color: var(--accent-color);
 }
-/* !====================================== */
+
 .work_together_form {
   display: flex;
   flex-direction: column;
@@ -146,8 +146,6 @@
   background-color: var(--accent-color-hover);
 }
 
-/* !====================================== */
-
 .work_together_address_list {
   display: inline-flex;
   justify-content: flex-start;
@@ -207,9 +205,6 @@
   top: 20px;
   padding: 0;
   background-color: transparent;
-  /* !============= */
-  color: #fafafa;
-  /* !============= */
 }
 
 .work_together_modal_close_btn:hover {

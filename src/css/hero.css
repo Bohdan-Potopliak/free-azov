@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  background-image: url('../img/hero/hero.png');
+  background-image: url('/img/hero/hero.png');
   margin: 0 auto;
 
   margin-bottom: 62px;
@@ -14,7 +14,7 @@
 @media only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url('../img/hero/hero@2x.png');
+    background-image: url('/img/hero/hero@2x.png');
   }
 }
 
