@@ -89,7 +89,9 @@
   justify-content: center;
   align-items: center;
   padding: 32px 0;
+  margin-bottom: 32px;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
   display: flex;
@@ -103,21 +105,25 @@
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
 .swiper-button-prev svg,
 .swiper-button-next svg {
   fill: var(--main-color);
   width: 24px;
   height: 24px;
 }
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+
 .swiper-button-disabled {
   opacity: 0.5;
   pointer-events: none;
   fill: var(--swiper-btn-disabled);
 }
+
 .swiper-button-disabled svg {
   fill: var(--swiper-btn-disabled);
 }
@@ -125,6 +131,9 @@
 
 
 @media screen and (min-width: 768px) {
+  .slider-navigation {
+    padding: 64px 0;
+  }
 
   .project-content {
     padding: 64px;
@@ -166,6 +175,9 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .slider-navigation {
+    margin-bottom: 100px;
+  }
 
   .tags-list {
     margin-bottom: 223px;

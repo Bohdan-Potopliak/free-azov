@@ -1,5 +1,5 @@
 .about-me {
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .about-div {
@@ -141,10 +141,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .about-me {
-    padding-bottom: 96px;
-  }
-
   .about-div {
     padding-bottom: 64px;
   }

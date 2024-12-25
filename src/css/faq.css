@@ -1,5 +1,5 @@
 .faq-section{
-    padding-bottom: 64px;
+    margin-bottom: 64px;
 }
 
 .faq-title {
@@ -88,7 +88,7 @@
 
 @media (min-width: 768px){
     .faq-section{
-        padding-bottom: 94px;
+        margin-bottom: 94px;
     }
 
     .faq-item{
@@ -103,6 +103,10 @@
 }
 
 @media (min-width: 1440px) {
+    .faq-section {
+        margin-bottom: 164px;
+    }
+    
     .faq-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 

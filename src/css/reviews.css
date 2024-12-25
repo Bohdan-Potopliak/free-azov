@@ -1,3 +1,7 @@
+.reviews-section {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
 
 .not-found {
     margin: 30px auto;
@@ -96,9 +100,19 @@ p {
     .arrows {
         gap: 20px;
     }
+
+    .reviews-section {
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
 }
 
 @media screen and (min-width:1440px) {
+    .reviews-section {
+        margin-top: 164px;
+        margin-bottom: 164px;
+    }
+
     .card{
         max-width: 332px;
     }
