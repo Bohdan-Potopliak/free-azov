@@ -53,21 +53,43 @@ p {
     gap: 12px;
 }
 
-.arrow{
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 60px;
-    padding: 14px;
+.swiper-button-prev.arrow,
+.swiper-button-next.arrow{
     width: 68px;
     height: 68px;
+    background: transparent;
+    border: 1px solid rgba(250, 250, 250, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 14px;
     background-color: transparent;
 }
+
+ .swiper-button-prev.arrow svg,
+.swiper-button-next.arrow svg {
+  fill: var(--main-color);
+  width: 24px;
+  height: 24px;
+} 
+
+ .swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(255, 255, 255, 0.1);
+} 
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  fill: var(--swiper-btn-disabled);
+} 
+
+ .swiper-button-disabled svg {
+  fill: var(--swiper-btn-disabled);
+} 
 
 .arrow:hover{
     background-color: transparent;
-}
-
-.blocked-arrow {
-    border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 @media screen and (min-width:768px) {
@@ -76,7 +98,7 @@ p {
     }
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1440px) {
     .card{
         max-width: 332px;
     }

@@ -110,6 +110,10 @@
   width: 100%;
 }
 
+.active-slide {
+  background-color: #0039d1 !important;
+}
+
 .skill-item.swiper-slide {
   width: 50%;
   flex-shrink: 0;
@@ -131,10 +135,9 @@
 .btn-next {
   fill: none;
   stroke: #3b3b3b;
-  width: clamp(40px, 5vw, 80px);
   cursor: pointer;
-  width: 28px;
-  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
 }
 
 @media only screen and (min-width: 768px) {

@@ -1,9 +1,3 @@
-/* .projects {
-  width: 100vw;
-  max-width: 320px;
-  padding: 16px;
-} */
-
 .projects-header {
   font-size: 16px;
   font-weight: 600;
@@ -66,7 +60,7 @@
   border: none;
   border-radius: 60px;
   cursor: pointer;
-  transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);;
+  transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-btn:hover {
@@ -89,8 +83,6 @@
   display: block;
 }
 
-
-
 .slider-navigation {
   display: flex;
   gap: 12px;
@@ -98,7 +90,6 @@
   align-items: center;
   padding: 32px 0;
 }
-
 .swiper-button-prev,
 .swiper-button-next {
   display: flex;
@@ -112,43 +103,28 @@
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
 .swiper-button-prev svg,
 .swiper-button-next svg {
   fill: var(--main-color);
   width: 24px;
   height: 24px;
 }
-
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-
 .swiper-button-disabled {
   opacity: 0.5;
   pointer-events: none;
   fill: var(--swiper-btn-disabled);
 }
-
 .swiper-button-disabled svg {
   fill: var(--swiper-btn-disabled);
 }
 
-/* @media screen and (min-width: 320px) {
-  .projects {
-    width: 100%;
-    max-width: 375px;
-    margin: 0 auto;
-    padding: 16px;
-  }
-} */
+
 
 @media screen and (min-width: 768px) {
-  /* .projects {
-    max-width: 1280px;
-    padding: 64px 32px 0;
-  } */
 
   .project-content {
     padding: 64px;
@@ -190,9 +166,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  /* .projects {
-    max-width: 1440px;
-  } */
 
   .tags-list {
     margin-bottom: 223px;
