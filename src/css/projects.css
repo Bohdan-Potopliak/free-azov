@@ -88,8 +88,7 @@
   gap: 12px;
   justify-content: center;
   align-items: center;
-  padding: 32px 0;
-  margin-bottom: 32px;
+  margin: 32px 0;
 }
 
 .btn-svg {
@@ -153,7 +152,7 @@
 
 @media only screen and (min-width: 1440px) {
   .slider-navigation {
-    margin-bottom: 100px;
+    margin: 64px  0 100px;
   }
 
   .tags-list {
