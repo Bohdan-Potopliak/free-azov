@@ -54,72 +54,34 @@ function createCards(arr) {
     .join('');
 }
 
-<<<<<<< HEAD
-const swiper = new Swiper('.swiper', {
+const swiperReviews = new Swiper('.swiper' && '.swiper-reviews', {
+  modules: [Navigation, Keyboard],
+  speed: 500,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   centeredSlidesBounds: true,
+  loop: false,
   slidesPerView: 1,
+  slidesPerGroup: 1,
   spaceBetween: 10,
   breakpoints: {
     768: {
       slidesPerView: 2,
       spaceBetween: 16,
     },
-    1280: {
+    1440: {
       slidesPerView: 4,
       spaceBetween: 16,
-=======
-const swiperReviews = new Swiper('.swiper' && '.swiper-reviews', {
-    modules: [Navigation, Keyboard ],
-    speed: 500,
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    centeredSlidesBounds: true,
-    loop: false,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    spaceBetween: 10,
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 16
-        },
-        1440: {
-            slidesPerView: 4,
-            spaceBetween: 16,
-        }
->>>>>>> main
     },
   },
 });
 
-<<<<<<< HEAD
-document.addEventListener('keydown', event => {
-  if (event.key === 'ArrowRight') {
-    swiper.slideNext();
-  } else if (event.key === 'ArrowLeft') {
-    swiper.slidePrev();
-  } else if (event.key === 'Tab') {
-    event.preventDefault();
-    if (event.shiftKey) {
-      swiper.slidePrev();
-    } else {
-      swiper.slideNext();
-    }
-  }
-});
-
-=======
->>>>>>> main
 function showError(message) {
   iziToast.error({
     title: 'Error',
